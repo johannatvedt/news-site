@@ -21,7 +21,7 @@ ul {
 header {
   background-color: #ffffff;
   border-bottom: 3px solid #fa9000;
-
+  margin-bottom: 20px;
 }
 
 nav {
@@ -59,4 +59,30 @@ nav {
 .nav-links a {
   font-size: 18px;
   font-weight: bold;
+}
+
+.news-header,
+.europe-header {
+  display: inline-block;
+}
+
+.news-header {
+  border-right: 2px solid #ccc;
+  color: #b7b7b7;
+  font-size: 27px;
+  margin-right: 10px;
+  padding: 9px 10px 10px 0;
+}
+
+.europe-header {
+  border-bottom: 5px solid #000;
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.flex-container {
+  -webkit-display: flex;
+  display: flex;
 }
