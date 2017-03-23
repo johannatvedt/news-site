@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #eeeeee;
   font-family: 'HelveticaNeueLTPro-Bd', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -82,7 +86,39 @@ nav {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
+
 .flex-container {
+  border: 2px solid red;
   -webkit-display: flex;
   display: flex;
+  height: 640px;
+}
+
+.main-story {
+  background-color: #FFF;
+  height: 100%;
+  position: relative;
+}
+
+.main-story img {
+  height: auto;
+  width: 555px;
+}
+
+.category {
+  background-color: #FFF;
+  padding: 3px 9px;
+  position: absolute;
+  top: 47.5%;
+}
+
+.category a {
+  color: #fa9000;
+  font-weight: 700;
+  margin-top: -15px;
+  text-transform: uppercase;
+}
+
+.category a:hover {
+  text-decoration: underline;
 }
