@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #eeeeee;
   font-family: 'HelveticaNeueLTPro-Bd', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -21,14 +25,7 @@ ul {
 header {
   background-color: #ffffff;
   border-bottom: 3px solid #fa9000;
-
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -37,6 +34,22 @@ nav {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
+}
+
+.flex-container {
+  display: flex;
+  height: 640px;
+  margin-bottom: 30px;
+}
+
+/* Nav
+==============================*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .logo {
@@ -59,4 +72,122 @@ nav {
 .nav-links a {
   font-size: 18px;
   font-weight: bold;
+}
+
+/* Main Header
+==============================*/
+
+.news-header,
+.europe-header {
+  display: inline-block;
+}
+
+.news-header {
+  border-right: 2px solid #ccc;
+  color: #b7b7b7;
+  font-size: 27px;
+  margin-right: 10px;
+  padding: 9px 10px 10px 0;
+}
+
+.europe-header {
+  border-bottom: 5px solid #000;
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Main Story
+==============================*/
+
+.main-story {
+  font-size: 1.5rem;
+  width: 49%;
+}
+
+.main-story .story {
+  height: 100%;
+}
+
+.main-story .story-category {
+  padding: 4px 11px;
+  top: 47%;
+}
+
+/* Side Stories
+==============================*/
+
+.side-stories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 51%;
+}
+
+.side-stories .story {
+  height: 50%;
+  padding-left: 30px;
+  width: 50%;
+}
+
+.side-stories .story-category {
+  padding: 3.5px 8px;
+  top: 44%;
+}
+
+.side-stories .story:nth-child(-n+2) {
+  padding-bottom: 15px;
+}
+
+.side-stories .story:nth-child(n+3) {
+  padding-top: 15px;
+}
+
+/* Story
+==============================*/
+
+.story-image {
+  width: 100%;
+}
+
+.story-content {
+  background-color: #FFF;
+  height: 100%;
+  position: relative;
+}
+
+.story-category {
+  background-color: #FFF;
+  color: #fa9000;
+  font-size: .725em;
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.story-category:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.story-info {
+  padding: 12px;
+}
+
+.story-headline {
+  display: block;
+  font-size: 1.55em;
+  font-weight: 700;
+  line-height: 1.125;
+  margin-bottom: 15px;
+}
+
+.story-headline:hover {
+  text-decoration: underline;
+}
+
+.story-caption {
+  line-height: 1.5;
 }
